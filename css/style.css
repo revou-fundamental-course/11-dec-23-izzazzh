@@ -7,6 +7,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    flex-direction: column;
 }
 
 .logo {
@@ -18,7 +19,7 @@ nav {
     list-style-type: none;
 }
 
-.nav-items li {
+.nav-items button {
     display: inline;
     margin-right: 20px;
 }
@@ -50,4 +51,17 @@ header img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+    
+}
+
+.nav-items {
+    flex-direction: column;
+    width: 100%;
+}
+
+. .logo {
+    margin-bottom: 20px;
 }

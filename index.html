@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav>
+    <script src="script.js"></script>
+    <nav class="navigasi">
         <img src="assets/logo.png" alt="logo" class="logo">
-        <ul class="nav-items">
-            <li>Home</li>
-            <li>Our Profile</li>
-            <li>Achievement</li>
-            <li>Message Us</li>
-        </ul>
+        <div class="nav-items">
+           <button>Home</button>
+           <button>Teachers and Staffs</button>
+           <button>Achievement</button>
+           <button>Message Us</button>
+        </div>
     </nav>
     <header>
         <h1>Hi Izza, Welcome to SMA Negeri 2 Jember</h1>
@@ -36,5 +37,15 @@
             <h4>Basketball Court</h4>
         </div>
     </div>
+    <div>
+        <form name="message-form" onsubmit="return validateForm()">
+            <input type="text" placeholder="nama anda" id="name-input" name="name-input">
+            <button id="submit" type="submit">Kirim</button>
+            <p id="error-name"></p>
+        </form>
+
+        <h1>Hi, this is <span id="name">-</span>. Nice to meet you!</h1>
+    </div>
+    
 </body>
 </html>
